@@ -1,0 +1,24 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 4.2rem;
+  height: 12.2rem;
+  padding-left: 7.2rem;
+}
+
+.header-nav nav ul {
+  display: flex;
+  gap: 4.2rem;
+}
+
+.header-nav nav ul a {
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  color: var(--grayish-blue);
+  transition: color 0.3s;
+}
+
+.header-nav nav ul a:hover {
+  font-weight: 700;
+  color: var(--white);
+}

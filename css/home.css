@@ -1,0 +1,23 @@
+.wrapper.home {
+  place-items: center;
+  place-content: center;
+  background-image: url('../assets/img/mountains-universe-1.png');
+}
+
+.wrapper a {
+  margin-top: 2.4rem;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  border: 0.2rem solid var(--white);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+
+.wrapper a:hover {
+  color: var(--cyan);
+  background-color: var(--white);
+}

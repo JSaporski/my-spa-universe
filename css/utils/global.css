@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
+  display: grid;
+  height: 100vh;
+  margin-top: -12.2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wrapper.o-universo,
+.wrapper.exploracao {
+  align-content: center;
+  padding-left: 10.2rem;
+  background-position: bottom;
+}
