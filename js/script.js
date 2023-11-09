@@ -1,14 +1,19 @@
-import Routes from './routes.js'
-const routes = new Routes()
+import Router from './router.js'
+const router = new Router()
 
-routes.add('/', '/pages/home.html')
-routes.add('/o-universo', '/pages/o-universo.html')
-routes.add('/exploracao', '/pages/exploracao.html')
+router.add('/', '/pages/home.html')
+router.add('/o-universo', '/pages/o-universo.html')
+router.add('/exploracao', '/pages/exploracao.html')
 
-routes.handle()
+router.handle()
 
-document.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', routes.route.bind(routes))
-})
+window.addEventListener('popstate', router.handle.bind(router))
+window.onload = () => {
+  const links = document.querySelectorAll('a')
 
-window.addEventListener('popstate', routes.handle.bind(routes))
+  links.forEach(link => {
+    link.addEventListener('click', router.route.bind(router))
+  })
+
+  console.log(links)
+}
